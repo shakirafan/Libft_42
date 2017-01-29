@@ -9,7 +9,7 @@ SRC = ft_putchar.c \
 		ft_putnbr.c \
 		ft_putendl_fd.c \
 		ft_bzero.c \
-		ft_memmalloc.c \
+		ft_memalloc.c \
 		ft_memccpy.c \
 		ft_memcpy.c \
 		ft_memset.c \
@@ -57,9 +57,10 @@ SRC = ft_putchar.c \
 		ft_lstnew.c \
 		ft_lstdelone.c \
 		ft_lstdel.c \
-		ft_lst_add.c \
+		ft_lstadd.c \
 		ft_lstiter.c \
-		ft_lstmap.c
+		ft_lstmap.c \
+		ft_strsplit
 
 OBJ = $(SRC:.c=.o)
 

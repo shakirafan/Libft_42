@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/29 21:09:07 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 22:59:00 by aalbeza          ###   ########.fr       */
+/*   Created: 2017/01/29 20:35:40 by aalbeza           #+#    #+#             */
+/*   Updated: 2017/01/29 20:36:02 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+int		memcmp(const void *s1, const void *s2, size_t n)
 {
-	char 	*str;
+	size_t i;
 
-	str = (char *)malloc(sizeof(*str) * len);
-	ft_strncpy(str, &s[start], len);
-	return (str);
+	i = 0;
+	while ((i < n) && s1)
+	{
+		if (s1 > s2)
+			return (s1 - s2);
+		if (s1 < s2)
+			return (s1 - s2);
+		i++;
+	}
+	return (0);
 }

@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/29 21:09:07 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 22:59:00 by aalbeza          ###   ########.fr       */
+/*   Created: 2017/01/29 20:45:33 by aalbeza           #+#    #+#             */
+/*   Updated: 2017/01/29 20:45:35 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char 	*str;
-
-	str = (char *)malloc(sizeof(*str) * len);
-	ft_strncpy(str, &s[start], len);
-	return (str);
+	fd = 0;
+	n = 0;
 }

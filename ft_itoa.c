@@ -1,4 +1,18 @@
-char *ft_strrev(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/01/29 21:58:19 by aalbeza           #+#    #+#             */
+/*   Updated: 2017/01/29 21:58:58 by aalbeza          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strrev_itoa(char *str)
 {
 	int stock;
 	int i;
@@ -27,7 +41,7 @@ int		ft_length(int c)
 	int i;
 
 	i = 1;
-	
+
 	if (c < 0)
 		c = c * - 1;
 	while (c > 9)
@@ -38,7 +52,7 @@ int		ft_length(int c)
 	return (i);
 }
 
-char *ft_itoa(long int n)
+char	*ft_itoa(long int n)
 {
 	char *tab;
 	int i;
@@ -47,7 +61,7 @@ char *ft_itoa(long int n)
 	tab = (char *)malloc(sizeof(*tab) * ft_length(n) + 1);
 	if (n < 0)
 	{
-		n = n * - 1;
+		n = n *- 1;
 		tab[i] = '-';
 		i++;
 	}

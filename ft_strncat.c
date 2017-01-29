@@ -3,7 +3,7 @@
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {
 	int i;
-	int count;
+	size_t count;
 
 	count = 0;
 	i = 0;

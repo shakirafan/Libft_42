@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/01/29 21:08:28 by aalbeza           #+#    #+#             */
+/*   Updated: 2017/01/29 21:08:58 by aalbeza          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 char *ft_strrev(char *str)
 {
@@ -8,10 +20,10 @@ char *ft_strrev(char *str)
 	end = 0;
 	start = 0;
 	swap = 0;
-	while(str[end] != '\0')
+	while (str[end] != '\0')
 		end++;
 	end--;
-	while(end >= start)
+	while (end >= start)
 	{
 		swap = str[end];
 		str[end] = str[start];
@@ -19,5 +31,5 @@ char *ft_strrev(char *str)
 		end--;
 		start++;
 	}
-	return(str);
+	return (str);
 }
