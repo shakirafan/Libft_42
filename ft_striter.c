@@ -6,11 +6,11 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 20:51:54 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 20:53:40 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 10:00:21 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_striter(char * s, void (*f) (char*))
+void	ft_striter(char *s, void (*f)(char*))
 {
 	int i;
 

@@ -6,7 +6,7 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 20:55:28 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 22:39:55 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 09:47:21 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strdup(char *src)
 {
 	char *string;
-	int i ;
+	int i;
 
 	i = 0;
 	string = (char *)malloc(sizeof(*string) * ft_strlen(src) + 1);
@@ -28,5 +28,4 @@ char	*ft_strdup(char *src)
 	}
 	string[i] = '\0';
 	return (string);
-
 }

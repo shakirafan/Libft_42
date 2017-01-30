@@ -6,22 +6,32 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 21:04:35 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 21:04:47 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 12:54:26 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncpy(char *dest, const char *src, int n)
+char	*ft_strncpy(char *dest, const char *src, int n)
 {
 	int i;
+	int a;
 
+	a = 0;
 	i = 0;
-	while (src[i] != '\0')
+	while (i < n)
 	{
-		if (i == n)
-			return (dest);
 		dest[i] = src[i];
+		if (src[i] == '\0')
+		{
+			a = i;
+			i++;
+			while (i < n)
+			{
+				dest[i] = src[a];
+				i++;
+			}
+		}
 		i++;
+	
 	}
-	dest[i] = src[i];
-	return(dest);
+	return (dest);
 }

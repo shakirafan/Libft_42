@@ -6,13 +6,13 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 20:38:01 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 20:38:18 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 09:37:28 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*ft_memset(void* s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*cast;
 	size_t	i;

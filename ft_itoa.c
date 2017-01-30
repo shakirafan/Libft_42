@@ -6,13 +6,13 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 21:58:19 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 21:58:58 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 19:35:13 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrev_itoa(char *str)
+static char		*ft_strrev_itoa(char *str)
 {
 	int stock;
 	int i;
@@ -36,7 +36,7 @@ char	*ft_strrev_itoa(char *str)
 	}
 	return (str);
 }
-int		ft_length(int c)
+static int		ft_length(int c)
 {
 	int i;
 
@@ -49,6 +49,7 @@ int		ft_length(int c)
 		c = c / 10;
 		i++;
 	}
+	i++;
 	return (i);
 }
 
@@ -58,7 +59,8 @@ char	*ft_itoa(long int n)
 	int i;
 
 	i = 0;
-	tab = (char *)malloc(sizeof(*tab) * ft_length(n) + 1);
+	if ((tab = (char *)malloc(sizeof(*tab) * (ft_length(n) + 1))) == NULL)
+		return (NULL);
 	if (n < 0)
 	{
 		n = n *- 1;
@@ -74,6 +76,6 @@ char	*ft_itoa(long int n)
 	tab[i] = n + 48;
 	i++;
 	tab[i] = '\0';
-	ft_strrev(tab);
+	ft_strrev_itoa(tab);
 	return (tab);
 }

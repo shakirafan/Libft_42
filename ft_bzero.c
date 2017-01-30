@@ -6,7 +6,7 @@
 /*   By: aalbeza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 20:25:19 by aalbeza           #+#    #+#             */
-/*   Updated: 2017/01/29 22:38:17 by aalbeza          ###   ########.fr       */
+/*   Updated: 2017/01/30 11:03:16 by aalbeza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (s == 0)
+	if (n == 0)
 		return ;
 	while (i < n)
 	{
-		(char*)s[i] = 0;
+		((char*)s)[i] = 0;
 		i++;
 	}
 }

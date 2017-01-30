@@ -23,7 +23,7 @@ SRC = ft_putchar.c \
 		ft_putchar_fd.c \
 		ft_putnbr_fd.c \
 		ft_putstr_fd.c \
-		ft_putendl_fd.c \
+		ft_putendl.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isprint.c \
@@ -43,7 +43,6 @@ SRC = ft_putchar.c \
 		ft_strjoin.c \
 		ft_strrev.c \
 		ft_strsub.c \
-		ft_strstrim.c \
 		ft_strstr.c \
 		ft_strnstr.c \
 		ft_itoa.c \
@@ -60,7 +59,11 @@ SRC = ft_putchar.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
-		ft_strsplit
+		ft_strsplit.c \
+		ft_strmap.c \
+		ft_strtrim.c \
+		ft_strmap.c \
+		ft_strmapi.c
 
 OBJ = $(SRC:.c=.o)
 
