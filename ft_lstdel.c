@@ -2,10 +2,14 @@
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	
-	if ((*alst)->next)
-		ft_lstdel(&(*alst)->next, del);
-	/*
-	else
-		ft_lstdel(&(*alst), del);*/
+	t_list *list;
+
+	list = *alst;
+	while (list)
+	{
+		del(list->content, list->content_size);
+		free(list);
+		list = list->next;
+	}
+	*alst = NULL;
 }

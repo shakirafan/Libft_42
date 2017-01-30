@@ -14,16 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*cast;
 	size_t	i;
 
-	cast = s;
 	i = 0;
-	if (i == 0)
+	if (s == 0)
 		return ;
 	while (i < n)
 	{
-		cast[i] = 0;
+		(char*)s[i] = 0;
 		i++;
 	}
 }
